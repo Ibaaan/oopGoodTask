@@ -1,4 +1,6 @@
-package ru.oop.task3;
+package oop.task3;
+
+import java.util.List;
 
 /**
  * <b>Задача 3:</b><br>
@@ -25,4 +27,18 @@ public class MainTask3 {
      * @see Position
      */
     // TODO реализовать метод moveTo(...)
+    public void moveTo(Person person, Position destination, List<Transport> transport){
+        for(int i =0; i < transport.size(); i++){
+            person.walk(transport.get(i).getPosition());
+            Position nextPosition;
+            try{
+                nextPosition = transport.get(i+1).getPosition();
+            }
+            catch(IndexOutOfBoundsException e){
+                nextPosition = destination;
+            }
+            transport.get(i).driveTo(nextPosition);
+        }
+        person.walk(destination);
+    }
 }

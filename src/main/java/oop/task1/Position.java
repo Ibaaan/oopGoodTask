@@ -1,4 +1,4 @@
-package ru.oop.task1;
+package oop.task1;
 
 /**
  * Позиция

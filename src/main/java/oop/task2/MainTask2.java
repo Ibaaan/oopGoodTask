@@ -1,4 +1,4 @@
-package ru.oop.task2;
+package oop.task2;
 
 /**
  * <b>Задача 2:</b><br>
@@ -21,7 +21,6 @@ package ru.oop.task2;
  * @since 21.10.2020
  */
 public class MainTask2 {
-
     /**
      * Переехать из текущего места в заданную точку
      * на любом, заранее определённом транспорте
@@ -29,4 +28,11 @@ public class MainTask2 {
      * @see Position
      */
     // TODO реализовать метод moveTo(...)
+    public void moveTo(Person person, Position destination, Transport transport){
+        person.walk(transport.getPosition());
+        transport.driveTo(destination);
+        person.walk(destination);
+    }
+        
+
 }
