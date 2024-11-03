@@ -1,4 +1,4 @@
-package ru.oop.task1;
+package oop.task3;
 
 /**
  * Человек
@@ -6,12 +6,7 @@ package ru.oop.task1;
  * @author vpyzhyanov
  * @since 21.10.2020
  */
-public interface Person {
-
-    /**
-     * Текущее местоположение
-     */
-    Position getPosition();
+interface Person extends Positioned {
 
     /**
      * Пройти до указанного места из текущего местоположения

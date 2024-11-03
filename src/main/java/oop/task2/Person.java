@@ -1,4 +1,4 @@
-package ru.oop.task3;
+package oop.task2;
 
 /**
  * Человек
@@ -14,4 +14,5 @@ interface Person extends Positioned {
      * @param destination место назначения
      */
     void walk(Position destination);
+
 }

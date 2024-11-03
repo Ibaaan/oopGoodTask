@@ -1,4 +1,4 @@
-package ru.oop.task3;
+package oop.task3;
 
 /**
  * Позиция
